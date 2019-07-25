@@ -266,8 +266,6 @@
     var u = navigator.userAgent, app = navigator.appVersion;
     var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
     var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-
-
     if (isAndroid) {
         //这个是安卓操作系统
         android.style.display = "block";
@@ -276,13 +274,9 @@
         //这个是ios操作系统
         ios.style.display = "block";
     }
-
-
     function my_click() {
         var btn1 = document.getElementById('divDownload-android');//下载一
         var btn2 = document.getElementById('divDownload-ios');//下载二
-
-
         var ua = navigator.userAgent;
         var isWeixin = !!/MicroMessenger/i.test(ua);
         if (isWeixin) {// 如果是微信
@@ -297,7 +291,7 @@
         if (isAndroid) {
             //这个是安卓操作系统
             var a = document.getElementById("a-android");
-            a.href = "http://bmob-cdn-16052.bmobcloud.com/2019/04/11/f68a7f9b406f11db80121c44e37dd792.apk";
+            a.href = "https://bmob-cdn-16052.bmobcloud.com/2019/06/20/b69a329f401e96248062d1431760269e.apk";
             a.setAttribute("onclick", '');
             //激发标签点击事件OVER
             a.click("return false");
@@ -315,13 +309,8 @@
             window.location = "https://xinpujing4.app2.cn";
         }
     }
-
-
-
     $('.back-top-wrapper').on('click',function(){$('.content').animate({scrollTop:0},1000);
         return false;})
-
-
     $(function () {
         var checkErweiBtn = $(".appdownload-check-erwei"),
             erweiOverlay = $(".appdownload-erwei-overlay"),
